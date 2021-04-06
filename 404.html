@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport"
+		  content="width=device-width, initial-scale=1.0, user-scalable=no" />
+	<title>温馨提示</title>
+	<meta name="keywords" content="404" />
+	<meta name="keywords"
+		  content="404" />
+	<meta name="description"
+		  content="404" />
+	<link rel="icon"
+		  href="./favicon.ico"
+		  type="image/x-icon" />
+	<link rel="stylesheet"
+		  href="./404/global.css" />
+	<link rel="stylesheet"
+		  href="./404/404.css" />
+</head>
+
+<body onload="whatBrowser()">
+    <div class="body">
+        <div class="stop-page">
+            <div class="sp-fir">
+                <div class="sp-w sp-noaccess">
+                    <div class="spa-logo">
+                        <img src="./404/404.svg"
+                             alt="" />
+                    </div>
+                    <div class="spa-text">
+                        <div class="spa-tit">网页暂时无法访问</div>
+                        <div class="spa-desc">
+                            该网页URL为无效路径值
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sp-sec ">
+                <div class="sp-w sp-if">
+                    <div class="if-common">
+                        <div class="ifc">
+                            <h2 class="ifc-tit">说起来</h2>
+                            <div class="ifc-desc">你为什么要浏览这个URL呢？</div>
+                        </div>
+                    </div>
+                    <div class="if-slice"></div>
+                    <div class="if-common">
+                        <div class="ifc">
+                            <div class="ifc-tit">如果你想浏览此页面呢</div>
+                            <div class="ifc-desc">
+                                其实你可以联系我来添加这个页面哦！
+                                <a data-sdi="7-0" href="这是你的twitter链接">Twitter链接</a>|
+                                <a data-sdi="7-0" href="mailto:这是你的邮箱">网络管理员邮箱</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="if-slice"></div>
+                    <div class="if-common">
+                        <div class="ifc">
+                            <div class="ifc-tit">如果你是因为点击了上一个页面的链接的话</div>
+                            <div class="ifc-desc">
+                                可以返回到<a data-sdi="7-0" href="javascript:;" Onclick="javascript:history.back();">上个页面</a>，或者联系网站管理员qwq
+    <a data-sdi="7-0" href="mailto:这是你的邮箱">网络管理员邮箱</a>
+</div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="stop-footer">
+            <p class="sf-num"><a href="这是你的网站链接"><!--这里是你的网站名字--> | 2020-2021</a></p>
+        </div>
+        <div class="if-slice"></div>
+        <div class="if-common">
+            <div class="ifc">
+                <div class="ifc-tit">您的相关信息</div>
+                <div class="ifc-desc">
+                    浏览器名称：
+                    <a data-sdi="7-0">
+                        <script>document.write(navigator.appName);</script>
+                    </a>
+                </div>
+                <div class="ifc-desc">
+                    浏览器版本：
+                    <a data-sdi="7-0">
+                        <script>document.write(navigator.appVersion);</script>
+                    </a>
+                </div>
+                <div class="ifc-desc">
+                    浏览器内核：
+                    <a data-sdi="7-0">
+                        <script>document.write(navigator.appCodeName);</script>
+                    </a>
+                </div>
+                <div class="ifc-desc">
+                    浏览器内核详细：
+                    <a data-sdi="7-0">
+                        <script>document.write(navigator.userAgent);</script>
+                    </a>
+                </div>
+                <div class="ifc-desc">
+                    IP地址：
+                    <a data-sdi="7-0">
+                        <script src="http://pv.sohu.com/cityjson.js"></script>
+                        <script>document.write(returnCitySN["cip"])</script>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script id="sdi_js"
+            aid="2019103118575411963"
+            type="text/javascript"
+            src="./404/404.js"></script>
+    <script>
+        document.querySelectorAll("a").forEach(el => {
+            el.addEventListener("click", e => {
+                try {
+                    let tag = e.currentTarget.dataset.sdi;
+                    let psArr = tag.split("-");
+                    let ptype = psArr[0];
+                    let stype = psArr[1];
+                    _sdi.stat({
+                        ptype: ptype,
+                        stype: stype
+                    });
+                } catch (error) { }
+            });
+        });
+        function whatBrowser() {
+            document.Browser.Name.value = navigator.appName;
+            document.Browser.Version.value = navigator.appVersion;
+            document.Browser.Code.value = navigator.appCodeName;
+            document.Browser.Agent.value = navigator.userAgent;
+        }
+    </script>
+
+
+</body>
+</html>
