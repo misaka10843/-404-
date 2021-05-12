@@ -27,5 +27,6 @@
 ## 许可
 <br>
 此仓库代码许可为GNU General Public Licence v3.0
+
 #### readme统计
 ![统计](https://count.getloli.com/get/@misaka10843?theme=elbooru)
