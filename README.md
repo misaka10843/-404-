@@ -4,7 +4,7 @@
 
 ## 成品预览
 <br>
-![预览图](https://i.loli.net/2021/04/06/aWGuYFBDmj7KeOw.png)
+![预览图](/yl.png)
 <hr>
 
 ## 文件内容
